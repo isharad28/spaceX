@@ -183,4 +183,5 @@ background-position:center;
 }
 .imageBackground{
   background: 	rgb(232,232,232);
+  border: 15px solid white;
 }

@@ -39,10 +39,12 @@ function App() {
     setradioButton(i)
   }
   return (
-    <section>
+    <>
+    <header><h3 className="m-3">SpaceX Launch Programs</h3></header>
+    <section style={{backgroundColor:'rgb(232,232,232)'}}>
       {console.log(years,"years")}
       <div className="row">
-        <div className="col-md-2">
+        <div style={{backgroundColor:'white'}}  className="col-md-2">
          <div className="row">
            <div className="col-md-12 m-2"><h4>Filters</h4></div>
            <div className="col-md-12 m-2"><h5 className="text-center">Launch Year</h5>
@@ -129,7 +131,7 @@ function App() {
             cards.map((data,index)=>{
               console.log(data,"customcard")
               return(
-            <div className="col-sm-6 col-md-6 col-lg-3">
+            <div  className=" col-md-6  col-lg-3">
                 <div className="card mt-2 customcard" >
                   <div className="p-2 imageBackground">
                 <img className="cardImage card-img-top w-50" src={data.links.mission_patch}alt="Card image cap" />
@@ -163,6 +165,7 @@ function App() {
 
       </div>
     </section>
+    </>
   );
 }
 
