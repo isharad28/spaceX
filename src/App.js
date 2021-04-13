@@ -68,7 +68,6 @@ function App() {
              id={`btn-check-${year+yrs}`}  
              autocomplete="off"/>
              <label class={`btn btn-${radioButton===index?'success':'primary'}`} for={`btn-check-${year+yrs}`}  >{year+yrs}</label>
-             {/* <button className="btn btn-primary" >{year+yrs}</button> */}
              </div>
              </div>
           
